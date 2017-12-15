@@ -1,38 +1,29 @@
-
 package factorial;
 
-
+/**
+ * Clase que contiene la funcion main
+ *
+ * @author mbacelofernandez
+ */
 public class Factorial {
 
+    /**
+     * Este programa multiplica los números enteros positivos que hay entre un
+     * número y el 1
+     *
+     * @param args argumentos de la clase principal
+     */
 
     public static void main(String[] args) {
 
+        int numero = 8;
+        int factorial;
 
-    int j;
-    int f;
+        Calculos calculoFactorial = new Calculos();
+        factorial = calculoFactorial.calcularFactorial(numero);
 
-  
-   j = 8;    
-   
-
-    
-   int i;
-   if (j == 0)
-f = 1;
-   else
-   {
-f = 1;
-for (i = j; i >= 1; i--)
-{
-    f = f * i;
-}
-   }    
-  
- 
-
-System.out.println(f); 
-
+        System.out.println(factorial);
 
     }
-    
+
 }
